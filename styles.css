@@ -269,6 +269,9 @@ header {
         margin: 7px 0;
     }
 
-   
+    .navlist.open {
+        right: 0;
+    }
 
+   
 }

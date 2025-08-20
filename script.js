@@ -1,2 +1,20 @@
 const menu = document.querySelector('#menu-icon');
 const navList = document.querySelector('.navlist');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navList.classList.toggle('open');
+}
+
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    reset: true
+});
+
+sr.reveal('hero-text', {delay: 200, origin: 'top'});
+sr.reveal('.hero-img', {delay: 200, origin: 'top'});
+sr.reveal('.icons', {delay: 200, origin: 'left'});
+sr.reveal('.about-img', {delay: 200, origin: 'right'});
+sr.reveal('.scroll-down', {delay: 200, origin: 'right'});
